@@ -6,7 +6,7 @@ namespace Enrollment_Application
     {
         static void Main(string[] args)
         {
-            ProcessManager pm = new ProcessManager;
+            ProcessManager pm = new ProcessManager();
             pm.Process();
         }
     }

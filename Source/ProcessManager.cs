@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* Author: Henry Felerski
+ * Date: 3/21/20
+ * Class Description:
+ * This class does the bulk of processing records. It has a data
+ * member for the other manager classes as well as a List of Records.
+ * Change Log:
+ * 
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,7 +17,6 @@ namespace Enrollment_Application
         private static int ValsLength = 5;
         private static string EOF = "EOF";
 
-        private int count;
         private FileManager files;
         private ConsoleManager output;
         private List<Record> records;
@@ -17,7 +24,6 @@ namespace Enrollment_Application
         /* Initialize the data members */
         public ProcessManager()
         {
-            count = 0;
             files = new FileManager();
             output = new ConsoleManager();
             records = new List<Record>();
