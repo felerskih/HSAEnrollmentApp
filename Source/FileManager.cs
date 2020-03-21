@@ -7,7 +7,9 @@
  * one method, which reads in one line from the file at a time and
  * formats it.
  * Change Log:
- * 
+ * 01. Update to return end of file message
+ * 02. Add Method to close Reader
+ * 03. Bad Array Length
  */
 using System;
 using System.Collections.Generic;
@@ -18,8 +20,9 @@ namespace Enrollment_Application
 {
     class FileManager
     {
-        private static char comma = ',';
+        private static char comma    = ',';
         private static int DataCount = 5;
+        private static string EOF    = "EOF";
 
         private StreamReader sr;
 
@@ -33,14 +36,24 @@ namespace Enrollment_Application
          * records. It is expected that sr is initialized correctly
          * and the input file is formatted correctly. Takes no 
          * inputs, outputs a string array containing data to be used
-         * in a Report object.
+         * in a Report object. Returns EOF in the 0th index if we are
+         * at the end of the file.
          */
         public string[] ReadLine()
         {
             string line;
-            string[] values = new string[DataCount - 1];
-            line = sr.ReadLine();
-            return values = line.Split(",", DataCount);
+            string[] values = new string[DataCount];
+            
+            if ((line = sr.ReadLine()) != null)
+                return values = line.Split(comma, DataCount);
+            values[0] = "EOF";
+            return values;
+        }
+
+        /* Close the StreamReader */
+        public void Close()
+        {
+            sr.Close();
         }
     }
 }

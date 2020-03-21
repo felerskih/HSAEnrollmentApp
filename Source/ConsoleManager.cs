@@ -3,7 +3,7 @@
  * Class Description:
  * A simple class to write data to the console.
  * Change Log:
- * 
+ * 01. Fix Signature of writeRecord
  */
 using System;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ namespace Enrollment_Application
         private static string ErrorString = "Invalid Record. Processing Stopped.";
 
         /* Write a record out to the Console */
-        public void writeRecord(string[] output)
+        public void writeRecord(string output)
         {
             Console.WriteLine(output);
         }

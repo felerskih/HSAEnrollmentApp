@@ -6,7 +6,8 @@
  * is only written once, and they share a common behavior to Validate,
  * although the implementation will be different.
  * Change Log:
- * 
+ * 01. Rework Class to support string date format.
+ * 02. Add ToString override
  */
 using System;
 using System.Collections.Generic;
@@ -16,12 +17,22 @@ namespace Enrollment_Application
 {
     abstract class CustomDate
     {
-        protected DateTime date;
-        
-        /* Initializes the date */
-        public CustomDate(DateTime d)
+        protected int day;
+        protected int month;
+        protected int year;
+
+        /* Initializes the data members. */
+        public CustomDate(int d)
         {
-            date = d;
+            month = d / 1000000;
+            day = (d / 10000) % 99;
+            year = d % 9999;
+        }
+
+        public override string ToString()
+        {
+            return day.ToString() + month.ToString() 
+                                  + year.ToString();
         }
 
         /* Stub to be used when inherited. */
