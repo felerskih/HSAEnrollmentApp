@@ -11,6 +11,7 @@
  * 02. Add Method to close Reader
  * 03. Bad Array Length
  * 04. Bad Path. Fixed
+ * 05. Use Constant EOF
  */
 using System;
 using System.Collections.Generic;
@@ -47,7 +48,7 @@ namespace Enrollment_Application
             
             if ((line = sr.ReadLine()) != null)
                 return values = line.Split(comma, DataCount);
-            values[0] = "EOF";
+            values[0] = EOF;
             return values;
         }
 
