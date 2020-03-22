@@ -1,0 +1,11 @@
+C:\HSA\HSAEnrollmentApp\Enrollment Application\bin\Debug\netcoreapp3.1\Enrollment Application.exe
+C:\HSA\HSAEnrollmentApp\Enrollment Application\bin\Debug\netcoreapp3.1\Enrollment Application.deps.json
+C:\HSA\HSAEnrollmentApp\Enrollment Application\bin\Debug\netcoreapp3.1\Enrollment Application.runtimeconfig.json
+C:\HSA\HSAEnrollmentApp\Enrollment Application\bin\Debug\netcoreapp3.1\Enrollment Application.runtimeconfig.dev.json
+C:\HSA\HSAEnrollmentApp\Enrollment Application\bin\Debug\netcoreapp3.1\Enrollment Application.dll
+C:\HSA\HSAEnrollmentApp\Enrollment Application\bin\Debug\netcoreapp3.1\Enrollment Application.pdb
+C:\HSA\HSAEnrollmentApp\Enrollment Application\obj\Debug\netcoreapp3.1\Enrollment Application.csprojAssemblyReference.cache
+C:\HSA\HSAEnrollmentApp\Enrollment Application\obj\Debug\netcoreapp3.1\Enrollment Application.AssemblyInfoInputs.cache
+C:\HSA\HSAEnrollmentApp\Enrollment Application\obj\Debug\netcoreapp3.1\Enrollment Application.AssemblyInfo.cs
+C:\HSA\HSAEnrollmentApp\Enrollment Application\obj\Debug\netcoreapp3.1\Enrollment Application.dll
+C:\HSA\HSAEnrollmentApp\Enrollment Application\obj\Debug\netcoreapp3.1\Enrollment Application.pdb
