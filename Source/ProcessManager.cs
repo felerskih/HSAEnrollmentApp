@@ -66,6 +66,8 @@ namespace Enrollment_Application
 
                 vals = files.ReadLine();
             }
+
+            files.Close();
             foreach (Record rec in records)
                 output.writeRecord(rec.ToString());
         }
